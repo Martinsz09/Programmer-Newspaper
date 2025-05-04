@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmer times - post</title>
-    <link rel="stylesheet" href="css/posts.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmer times - post</title>
+  <link rel="stylesheet" href="css/posts.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="return"><a href="index.html">&#60; </a></div>
-    <div class="form">
-        <div class="form-container">
-            <form action="">
-                <input type="text" name="title-post" id="title-post" placeholder="Título do post">
-                <textarea name="post-content" id="post-content" cols="30" rows="10" placeholder="Conteúdo do post"></textarea>
-            </form>
+  <span class="material-icons"><a href="index.html">arrow_back</a></span>
+
+  <div class="form">
+    <div class="form-container">
+      <!-- Removemos action e method para controlar via JS -->
+      <form onsubmit="posts(); return false;">
+        <h1>Mensagem</h1>
+        <input type="text" name="title-post" id="title-post" placeholder="Título do post" required>
+        <textarea name="post-content" id="post-content" cols="30" rows="10" placeholder="Conteúdo do post" required></textarea>
+
+        <div class="btn-submit-wrapper">
+          <input type="submit" value="Enviar" class="btn-submit">
+          <span class="material-icons" id="icon-submit">check</span>
         </div>
+
+        <div class="btn-delete-wrapper">
+          <input type="reset" value="Deletar" class="btn-delete">
+          <span class="material-icons" id="icon-delete">delete</span>
+        </div>
+      </form>
     </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,68 +1,207 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
-}
 body {
-    background-color: #e9e9e9;
-}
-
-.form {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    width: 100%;
+    margin: 0;
+    background-image: url(../images/walpaper_home.jfif);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 20px; 
-    width: 100%;
-    max-width: 500px; 
-    padding: 20px;
-    border-radius: 8px; 
-    background-color: #de3bff;
+a {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+
+    text-decoration: none;
+    color: #ccc;
 }
 
-input[type="text"], textarea {
-    width: 100%; 
-    padding: 10px;
+a:hover {
+    color: black;
+    padding: 5px;
+    transition: color 0.7s, padding 1s;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1.4rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 270px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
 textarea {
     resize: vertical;
+    min-height: 150px;
 }
 
-.return {
+input[type="submit"] {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+input[type="reset"] {
+    width: 100%;
+}
+
+button,
+input[type="reset"],
+input[type="submit"] {
+    background-color: rgb(148, 81, 255);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Delete Buttons (Chatgpt)  */
+
+.btn-delete-wrapper {
+    position: relative;
+    display: block;
+}
+
+.btn-delete {
+    padding: 10px 16px 10px 40px;
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+span#icon-delete {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    pointer-events: none;
 }
 
-.return a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #de3bff;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 100px;
-    transition: background 0.5s ease-in-out;
+/* Submit Buttons (Chatgpt) */
+
+.btn-submit-wrapper {
+    position: relative;
+    display: block;
 }
 
-.return a:hover {
+.btn-submit {
+    padding: 10px 16px 10px 40px;
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    background-color: #d400ff;
+span#icon-submit {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin: auto;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    pointer-events: none;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transition: background 0.7s;
+}
+
+/* Media */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-position: left center;
+        background-size: cover;
+    }
     
+    form {
+        padding: 3rem;
+        max-width: 650px;
+        margin: 0px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-position: left center;
+        background-size: cover;
+    }
+    form {
+        padding: 4rem;
+        max-width: 750px;
+        margin: 0px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0px;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-position: left center;
+        background-size: cover;
+    }
+
+    form {
+        padding: 4rem;
+        max-width: 750px;
+        margin: 0px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0px;
+        font-size: 2.5rem;
+    }
 }
