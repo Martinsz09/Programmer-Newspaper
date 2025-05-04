@@ -18,10 +18,11 @@ body {
     color: rgb(255, 255, 255);
     overflow: hidden;
 }
+
 .section-home {
     background-image: url('/images/walpaper_home.jfif');
     background-size: cover;       
-    background-position: center; 
+    background-position: bottom center; 
     background-repeat: no-repeat; 
     height: 100vh; 
 }
@@ -31,7 +32,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: bold;
 }
 
@@ -83,4 +83,21 @@ input {
 #b2:hover {
     transform: scale(1.1);
     background-color: rgb(74, 12, 173);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .section-home {
+        background: url(../images/walpaper_home.jfif) no-repeat;
+        background-position: center calc(294px - 722px); 
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-home {
+        background: url(../images/walpaper_home.jfif) no-repeat;
+        background-position: center calc(402px - 822px); 
+        background-size: cover;
+    }
 }
