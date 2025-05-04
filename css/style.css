@@ -1,35 +1,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font01: "Merriweather", serif;
+    --font02: "Poppins", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     color: rgb(255, 255, 255);
     overflow: hidden;
 }
+
 .section-home {
     background-image: url('/images/walpaper_home.jfif');
     background-size: cover;       
-    background-position: center; 
+    background-position: bottom center; 
     background-repeat: no-repeat; 
     height: 100vh; 
-  }
+}
+
 h1 {
-    font-family: "Merriweather", serif;
+    font-family: var(--font01);
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-weight: bold;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font02);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +44,7 @@ h2 {
     top: 250px;
     font-size: 50px;
 }
+
 .inputs {
     display: flex;
     align-items: center;
@@ -44,6 +52,7 @@ h2 {
     height: 100vh;
     gap: 25px;
 }
+
 input {
     display: flex;
     width: 200px;
@@ -64,6 +73,7 @@ input {
     background-color: rgb(189, 184, 184);
     color: white;
 }
+
 #b2 {
     background-color: rgb(98, 0, 255);
     color: white;
@@ -73,4 +83,21 @@ input {
 #b2:hover {
     transform: scale(1.1);
     background-color: rgb(74, 12, 173);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .section-home {
+        background: url(../images/walpaper_home.jfif) no-repeat;
+        background-position: center calc(294px - 722px); 
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-home {
+        background: url(../images/walpaper_home.jfif) no-repeat;
+        background-position: center calc(402px - 822px); 
+        background-size: cover;
+    }
 }
