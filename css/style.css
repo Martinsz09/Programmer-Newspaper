@@ -1,3 +1,4 @@
+/* @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -85,6 +86,19 @@ input {
     background-color: rgb(74, 12, 173);
 }
 
+#b3 {
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+#b3:hover {
+    transform: scale(1.1);
+    background-color: rgb(189, 184, 184);
+    color: white;
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     .section-home {
@@ -99,5 +113,135 @@ input {
         background: url(../images/walpaper_home.jfif) no-repeat;
         background-position: center calc(402px - 822px); 
         background-size: cover;
+    }
+} */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+
+:root {
+    --font01: "Merriweather", serif;
+    --font02: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    overflow: hidden;
+}
+
+.section-home {
+    background-image: url('/images/walpaper_home.jfif');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    font-family: var(--font01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--font02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    font-size: 50px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column; /* mobile first: botões empilhados */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+/* Botão 1 */
+#b1 {
+    background-color: white;
+    color: black;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+#b1:hover {
+    transform: scale(1.1);
+    background-color: rgb(189, 184, 184);
+    color: white;
+}
+
+/* Botão 2 (Roxo) */
+#b2 {
+    background-color: rgb(98, 0, 255);
+    color: white;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+#b2:hover {
+    transform: scale(1.1);
+    background-color: rgb(74, 12, 173);
+}
+
+/* Botão 3 */
+#b3 {
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+#b3:hover {
+    transform: scale(1.1);
+    background-color: rgb(189, 184, 184);
+    color: white;
+}
+
+/* Desktop (768px+) alinha tudo lado a lado */
+@media screen and (min-width: 768px) {
+    .inputs {
+        flex-direction: row;
+    }
+}
+
+/* Tablets em diante (768px+) */
+@media screen and (min-width: 768px) {
+    .inputs {
+        flex-direction: row; /* Alinha os botões lado a lado */
+    }
+}
+
+/* Ajustes de background para tamanhos maiores */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .section-home {
+        background-position: center calc(294px - 722px);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-home {
+        background-position: center calc(402px - 822px);
     }
 }

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, p {
+    text-align: center;
+    padding-top: 14px;
+    margin: 4px 0px 0px 0px;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 9px;
+}
+
+img {
+    width: 30px;
+    display: flex;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: padding 0.4s linear;
+}
+
+a:hover {
+    text-decoration: underline;
+    padding: 4px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #17171C;
+    
+    color: white;
+}
+
+main {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.colab {
+    background-color: #222427;
+    border: 1px solid rgba(255, 255, 255, 0.788);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    margin: 13px;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.932);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.whats {
+    background-image: linear-gradient(to right, #086255, #25D266);
+}
+
+.insta {
+    background-image: linear-gradient(to right, #EB8439, #C42176);
+}
+
+.gith {
+    background-image: linear-gradient(to right, #282B2E, #212326)
+}
+
+footer {
+    background-color: #292929;
+    margin-top: 11px;
+    padding: 5px;
+    text-align: center;
+}

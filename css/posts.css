@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 * {
     margin: 0px;
@@ -40,6 +41,7 @@ form {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     max-width: 270px;
+    opacity: 10px;
     width: 90%;
 }
 
