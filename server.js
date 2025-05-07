@@ -52,6 +52,7 @@ app.get('/posts', (req, res) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Blog</title>
+      <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
       <!-- Link para o Bootstrap -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>

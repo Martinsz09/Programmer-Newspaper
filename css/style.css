@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 /* @charset "UTF-8";
 
+=======
+/* Importação de fontes */
+>>>>>>> b112dc2 (Finalizado)
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Variáveis para fontes */
 :root {
     --font01: "Merriweather", serif;
     --font02: "Poppins", sans-serif;
 }
 
+/* Reset de estilo */
 * {
     margin: 0;
     padding: 0;
@@ -18,72 +22,119 @@
 body {
     color: rgb(255, 255, 255);
     overflow: hidden;
+    font-family: var(--font02);
 }
 
+/* Estilo para a seção principal */
 .section-home {
     background-image: url('/images/walpaper_home.jfif');
-    background-size: cover;       
-    background-position: bottom center; 
-    background-repeat: no-repeat; 
-    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sombras e sobreposição para melhorar a legibilidade */
+.dark-shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Mudança importante para alinhar o conteúdo na vertical */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do título */
+.header-content {
+    text-align: center;
+    margin-bottom: 30px; /* Diminui a margem inferior */
 }
 
 h1 {
     font-family: var(--font01);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 h2 {
     font-family: var(--font02);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 250px;
-    font-size: 50px;
+    font-size: 2rem;
+    margin-top: 10px;
 }
 
-.inputs {
+/* Estilo dos botões */
+.button-group {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    gap: 25px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Diminui a distância entre o texto e os botões */
 }
 
 input {
-    display: flex;
     width: 200px;
     height: 50px;
-    cursor: pointer;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 #b1 {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: black;
-    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
 }
 
 #b1:hover {
     transform: scale(1.1);
-    background-color: rgb(189, 184, 184);
+    background-color: #bdafaf;
     color: white;
 }
 
 #b2 {
-    background-color: rgb(98, 0, 255);
+    background-color: #6200ff;
     color: white;
-    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
 }
 
 #b2:hover {
     transform: scale(1.1);
-    background-color: rgb(74, 12, 173);
+    background-color: #4a0cad;
+}
+
+#b3 {
+    background-color: #4caf50;
+    color: white;
+}
+
+#b3:hover {
+    transform: scale(1.1);
+    background-color: #388e3c;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        width: 80%;
+    }
 }
 
 #b3 {
@@ -100,20 +151,16 @@ input {
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
     .section-home {
-        background: url(../images/walpaper_home.jfif) no-repeat;
-        background-position: center calc(294px - 722px); 
-        background-size: cover;
+        background-position: center calc(294px - 722px);
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .section-home {
-        background: url(../images/walpaper_home.jfif) no-repeat;
-        background-position: center calc(402px - 822px); 
-        background-size: cover;
+        background-position: center calc(402px - 822px);
     }
+<<<<<<< HEAD
 } */
 
 @charset "UTF-8";
@@ -245,3 +292,6 @@ input {
         background-position: center calc(402px - 822px);
     }
 }
+=======
+}
+>>>>>>> b112dc2 (Finalizado)

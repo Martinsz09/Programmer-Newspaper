@@ -6,5 +6,9 @@
   {
     "title": "Programação envolve muita matematica?",
     "body": "A programação envolve matemática, mas a quantidade necessária depende do tipo de tarefa. Para áreas como algoritmos, inteligência artificial e criptografia, o conhecimento em matemática é essencial, incluindo álgebra, cálculo e estatística. Já em tarefas mais simples, como desenvolvimento de sites e aplicativos básicos, a matemática não é um grande desafio e pode ser substituída por lógica de programação e ferramentas prontas. No geral, a lógica e o raciocínio algorítmico, que têm base na matemática discreta, são fundamentais, mas não é preciso ser um expert em matemática para programar bem."
+  },
+  {
+    "title": "Sou novo na programação!!",
+    "body": "Comecei ontem na programação e vim postar minha evolução\n\nprint(\"Olá, mundo\")\n\n"
   }
 ]
