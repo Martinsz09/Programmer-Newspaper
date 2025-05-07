@@ -1,9 +1,10 @@
 [
-  null,
-  null,
-  null,
   {
-    "title": "adasd",
-    "body": "hjghjg"
+    "title": "Qual a diferença de Java para JS?",
+    "body": "Bem, ambas as linguagens são amplamente usadas na web, porém JS é totalmente diferente de java, java foi projetado para projetos que precisam conter uma maior segurança e usar no back end, já o JS foi projetado para usar no front end, ele so tem esse nome por causa que o java na epoca de lancamento fez muito sucesso, isso foi apenas uma estrategia de marketing!"
+  },
+  {
+    "title": "Programação envolve muita matematica?",
+    "body": "A programação envolve matemática, mas a quantidade necessária depende do tipo de tarefa. Para áreas como algoritmos, inteligência artificial e criptografia, o conhecimento em matemática é essencial, incluindo álgebra, cálculo e estatística. Já em tarefas mais simples, como desenvolvimento de sites e aplicativos básicos, a matemática não é um grande desafio e pode ser substituída por lógica de programação e ferramentas prontas. No geral, a lógica e o raciocínio algorítmico, que têm base na matemática discreta, são fundamentais, mas não é preciso ser um expert em matemática para programar bem."
   }
 ]

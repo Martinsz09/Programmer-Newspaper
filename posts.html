@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programmer times - post</title>
+  <title>Programmer Newspaper - post</title>
   <link rel="stylesheet" href="css/posts.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -12,10 +12,9 @@
 
   <div class="form">
     <div class="form-container">
-      <!-- Removemos action e method para controlar via JS -->
       <form onsubmit="posts(); return false;">
         <h1>Mensagem</h1>
-        <input type="text" name="title-post" id="title-post" placeholder="Título do post" pattern="[A-Za-z]+" minlength="5" maxlength="12" required>
+        <input type="text" name="title-post" id="title-post" placeholder="Título do post" required>
 
         <textarea name="post-content" id="post-content" cols="30" rows="10" placeholder="Conteúdo do post" required></textarea>
 
