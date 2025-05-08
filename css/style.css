@@ -1,13 +1,11 @@
+/* 
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Variáveis para fontes */
 :root {
     --font01: "Merriweather", serif;
     --font02: "Poppins", sans-serif;
 }
 
-/* Reset de estilo */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +18,7 @@ body {
     font-family: var(--font02);
 }
 
-/* Estilo para a seção principal */
+
 .section-home {
     background-image: url('/images/walpaper_home.jfif');
     background-size: cover;
@@ -32,44 +30,32 @@ body {
     align-items: center;
 }
 
-/* Sombras e sobreposição para melhorar a legibilidade */
+
 .dark-shadow {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Mudança importante para alinhar o conteúdo na vertical */
+    flex-direction: column; 
     align-items: center;
     padding: 20px;
 }
 
-/* Estilo do título */
+
 .header-content {
     text-align: center;
-    margin-bottom: 30px; /* Diminui a margem inferior */
+    margin-bottom: 30px; 
 }
 
-h1 {
-    font-family: var(--font01);
-    font-weight: bold;
-    font-size: 3rem;
-}
 
-h2 {
-    font-family: var(--font02);
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-/* Estilo dos botões */
 .button-group {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 30px; /* Diminui a distância entre o texto e os botões */
+    margin-top: 30px; /* Diminui a distância entre o texto e os botões 
 }
 
 input {
@@ -113,7 +99,6 @@ input {
     background-color: #388e3c;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -161,21 +146,6 @@ input {
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
 
-:root {
-    --font01: "Merriweather", serif;
-    --font02: "Poppins", sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    color: #fff;
-    overflow: hidden;
-}
 
 .section-home {
     background-image: url('/images/walpaper_home.jfif');
@@ -196,6 +166,7 @@ h1 {
 h2 {
     font-family: var(--font02);
     display: flex;
+    margin-bottom: 25px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -276,6 +247,153 @@ input {
     }
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .section-home {
+        background-position: center calc(294px - 722px);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .section-home {
+        background-position: center calc(402px - 822px);
+    }
+}
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variáveis para fontes */
+:root {
+    --font01: "Merriweather", serif;
+    --font02: "Poppins", sans-serif;
+}
+
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: var(--font02);
+    overflow: hidden;
+}
+
+/* Seção principal */
+.section-home {
+    background-image: url('/images/walpaper_home.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sombra escura */
+.dark-shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    align-self: flex-start;
+    font-family: var(--font01);
+    font-weight: bold;
+
+}
+
+h2 {
+    font-family: var(--font02);
+    font-size: 50px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+/* Botões */
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Estilos individuais */
+#b1 {
+    background-color: white;
+    color: black;
+}
+
+#b1:hover {
+    transform: scale(1.1);
+    background-color: #bdafaf;
+    color: white;
+}
+
+#b2 {
+    background-color: rgb(98, 0, 255);
+    color: white;
+}
+
+#b2:hover {
+    transform: scale(1.1);
+    background-color: rgb(74, 12, 173);
+}
+
+#b3 {
+    background-color: #4caf50;
+    color: white;
+}
+
+#b3:hover {
+    transform: scale(1.1);
+    background-color: #388e3c;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        width: 80%;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .section-home {
