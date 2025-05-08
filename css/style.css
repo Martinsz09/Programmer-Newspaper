@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-/* @charset "UTF-8";
 
-=======
-/* Importação de fontes */
->>>>>>> b112dc2 (Finalizado)
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Variáveis para fontes */
@@ -71,6 +66,7 @@ h2 {
 .button-group {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 30px; /* Diminui a distância entre o texto e os botões */
@@ -160,10 +156,8 @@ input {
     .section-home {
         background-position: center calc(402px - 822px);
     }
-<<<<<<< HEAD
-} */
+} 
 
-@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
 
@@ -219,7 +213,7 @@ input {
 
 .inputs {
     display: flex;
-    flex-direction: column; /* mobile first: botões empilhados */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -229,10 +223,12 @@ input {
 .button-group {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 
-/* Botão 1 */
+
 #b1 {
     background-color: white;
     color: black;
@@ -244,7 +240,7 @@ input {
     color: white;
 }
 
-/* Botão 2 (Roxo) */
+
 #b2 {
     background-color: rgb(98, 0, 255);
     color: white;
@@ -256,7 +252,7 @@ input {
     background-color: rgb(74, 12, 173);
 }
 
-/* Botão 3 */
+
 #b3 {
     transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
 }
@@ -266,21 +262,21 @@ input {
     color: white;
 }
 
-/* Desktop (768px+) alinha tudo lado a lado */
+
 @media screen and (min-width: 768px) {
     .inputs {
         flex-direction: row;
     }
 }
 
-/* Tablets em diante (768px+) */
+
 @media screen and (min-width: 768px) {
     .inputs {
-        flex-direction: row; /* Alinha os botões lado a lado */
+        flex-direction: row; 
     }
 }
 
-/* Ajustes de background para tamanhos maiores */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .section-home {
         background-position: center calc(294px - 722px);
@@ -292,6 +288,4 @@ input {
         background-position: center calc(402px - 822px);
     }
 }
-=======
-}
->>>>>>> b112dc2 (Finalizado)
+
